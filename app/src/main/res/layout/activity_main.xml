@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:background="@drawable/border_text"
+        android:gravity="center"
+        android:text="@string/str_user_id"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/glBottomTextInput"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/glStartTextInput"
+        app:layout_constraintTop_toTopOf="@id/glTopTextInput" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Financial Instruction"
+        android:textSize="@dimen/text_heading_2x"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtInputUserId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/border_text"
+        android:hint="Please Insert UserID"
+        android:paddingStart="@dimen/margin_small"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/glBottomTextInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/glStartTextInput"
+        app:layout_constraintTop_toTopOf="@id/glTopTextInput" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottomTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:background="@drawable/border_text"
+        android:gravity="center"
+        android:text="@string/str_user_name"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/glBottomTxtName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/glStartTextInput"
+        app:layout_constraintTop_toTopOf="@id/glTopTxtName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/border_text"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_small"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/glBottomTxtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/glStartTextInput"
+        app:layout_constraintTop_toTopOf="@id/glTopTxtName" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottomTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:background="@drawable/border_text"
+        android:gravity="center"
+        android:text="@string/str_attributes"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/glTopTotalBalance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/glStartTextInput"
+        app:layout_constraintTop_toTopOf="@id/glBottomTxtName" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/border_text"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin_small"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotalBalance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/glStartTextInput"
+        app:layout_constraintTop_toBottomOf="@+id/txtName">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtAllFinancial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_regular_2x" />
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:background="@drawable/border_text"
+        android:gravity="center"
+        android:text="@string/str_total_balance"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/glTopBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/glStartTextInput"
+        app:layout_constraintTop_toTopOf="@id/glTopTotalBalance" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTotalBalance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:background="@drawable/border_text"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_small"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toTopOf="@id/btnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/glStartTextInput"
+        app:layout_constraintTop_toTopOf="@id/glTopTotalBalance" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopTotalBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSearch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/str_search"
+        app:layout_constraintBottom_toBottomOf="@id/glBottomBtn"
+        app:layout_constraintEnd_toEndOf="@id/glEndTextInput"
+        app:layout_constraintStart_toStartOf="@id/glStartTextInput"
+        app:layout_constraintTop_toTopOf="@id/glTopBtn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glTopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/str_clear"
+        app:layout_constraintBottom_toBottomOf="@id/glBottomClearBtn"
+        app:layout_constraintEnd_toEndOf="@id/glEndTextInput"
+        app:layout_constraintStart_toStartOf="@id/glStartTextInput"
+        app:layout_constraintTop_toBottomOf="@id/btnSearch" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBottomClearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

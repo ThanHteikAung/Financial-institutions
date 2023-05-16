@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestForExam</string>
+    <string name="str_user_id">User ID</string>
+    <string name="str_user_name">User Name</string>
+    <string name="str_attributes">All attributes of the financial institutions</string>
+    <string name="str_total_balance">Total Balance</string>
+    <string name="str_search">Search</string>
+    <string name="str_clear">Clear</string>
+</resources>

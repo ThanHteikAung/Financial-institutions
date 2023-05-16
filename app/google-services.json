@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "160531405907",
+    "project_id": "financial-instruction-app",
+    "storage_bucket": "financial-instruction-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160531405907:android:2c7158ed5a73275976baa6",
+        "android_client_info": {
+          "package_name": "com.tha.testforexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160531405907-5rp51plf51umkbhigdepcq65fpc3logb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxqFHwZx_t6YgwhZGmIbgxMsz9XjKsXAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160531405907-5rp51plf51umkbhigdepcq65fpc3logb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

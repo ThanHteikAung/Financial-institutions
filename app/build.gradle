@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    namespace 'com.tha.testforexam'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.tha.testforexam"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        /**
+         * Developer Name = Than Hteik Aung
+         * Modify date = (15/05/2023)
+         * version no = v0.0
+         * reason to add = To enable view binding in a module, set the viewBinding build option to true
+         **/
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    /**
+     * Developer Name = Than Hteik Aung
+     * Modify date = (15/05/2023)
+     * version no = v0.0
+     * reason to add = can make a synchronous or asynchronous HTTP request to the remote webserver.
+     * error case = no case
+     **/
+
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+
+    /**
+     * Developer Name = Than Hteik Aung
+     * Modify date = (15/05/2023)
+     * version no = v0.0
+     * reason to add = This dependency contains the class android.viewbinding.ViewBinding
+     *                 which AndroidStudio could not access.
+     * error case = Cannot access 'android.viewbinding.ViewBinding' which is a supertype of
+     *              'com.tha.myanmardelivery.databinding.ActivityMainBinding'. Check your module
+     *               classpath for missing or conflicting dependencies
+     **/
+    implementation 'com.android.databinding:viewbinding:8.0.1'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+}
